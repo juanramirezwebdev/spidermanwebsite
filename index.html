@@ -1,0 +1,137 @@
+<html>
+<head>
+
+    <title> Spiderman Website </title>
+    <style type="text/css">
+        body {
+            opacity: 1.5;
+          background-color: #7900FF
+      
+                  
+          
+        }
+          
+
+        #seccion1 {
+        color: black;
+        font-size: 100px;
+        font-family: cursive;
+        text-align: center;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png);
+        background-size: cover;
+        border-radius: 90px;
+        }
+
+        #proyectos {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-style: italic;
+        color: maroon;
+        font-size: 90px;
+        font-family: cursive;
+        text-align: center;
+        }
+
+     
+
+        .proyecto img {
+         height: 160px;      
+         width : 50%;
+         padding: 50px 50px;
+         border-radius: 90px;
+        
+        }
+     .boton {
+
+     background-color: white;
+     color: black;
+     border: 2px solid #4CAF50; /* Green */
+     padding: 25px 25px 25px 25px;
+     font-family: cursive;
+     border-radius: 100px;
+     
+     
+     
+     }
+
+     .boton:hover {
+
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+        .andrew img {
+          width: 40%;
+         padding: 50px;
+        border-radius: 90px;
+       
+        }
+        
+        .andrew {
+            color: midnightblue;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #spidey {
+         display : grid;
+         font-size: 30px;
+         font-family: cursive;
+      
+         text-align: center;
+         color: red;
+        }
+
+     
+        </style>
+        
+ </head>
+
+ <body>
+
+    <section id="seccion1">
+        <h1 class="texto1">Welcome to the Website</h1>
+
+    
+     </section>
+
+     <section id="proyectos"> 
+        <div class="proyecto">
+            <img src="https://res.feednews.com/assets/v2/e40d4b8f231a48d3fd70a60c311b19ab?width=1280&height=720&quality=hq&category=us_News_Entertainment" />
+         <p>Spiderman </p>
+
+         <button class="boton" onclick= 'abrir ("spiderman" , 1962)'> About Spiderman</button>
+        </div>  
+        <div class="proyecto"><img src="https://www.cnet.com/a/img/5OVL3iMZjo0wld8Uj15_C00bqKo=/940x0/2021/09/03/afa4abf1-ea46-45bf-b4d0-84259920a236/qlwgiefucodivdzjgil7.jpg"/>
+            <p>Venom</p>
+
+            <button class="boton" onclick='abrir ("Venom" , 1970)'>About Venom</button>
+        </div>
+
+         <script>
+            function abrir (heroe, date) {
+            console.log ( heroe + "was created on " + date )
+            alert( heroe + " " + "was created on " + date)
+            }
+
+
+        </script>          
+     </section>
+
+     <section id="spidey">
+      
+        <div class="andrew">
+          <img src=" https://hollywoodlife.com/wp-content/uploads/2021/12/spider-man-andrew-garfield-tobey-maguire-ftr.jpg?w=620" />
+        
+    </div>
+     </section>
+
+     <section id="spidey">
+        <a href="https://hollywoodlife.com/2021/12/17/are-andrew-garfield-tobey-maguire-in-spider-man-no-way-home-spoilers/"
+        title="3 spiderman ">  Click here if you wanna know if all three spiderman are going to appear in the new movie</a>
+     </section>
+
+   
+    
+ </body>
+
+</html>
